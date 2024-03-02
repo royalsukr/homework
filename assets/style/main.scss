@@ -122,3 +122,37 @@ padding-top: 30px;
    border: 1px solid white; 
 }
 }
+.about-me{
+margin-top: 100px;
+ background: white;
+ padding: 20px 30px;
+ gap: 120px;
+ width: 1000px;
+ margin-left: 210px;
+ display: flex;
+ @include responsive(smartphone-portrait) {
+    display: flex;
+    flex-direction: column;
+     width:200px;
+     margin-left: 75px;
+     
+ }
+ .happy-customers{
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.number{
+    font-size: 24px;
+    font-weight: 700;
+}
+.about-title{
+color: #737373;
+font-size: 14px;
+font-weight: 600;
+}
+}
+
+
+
