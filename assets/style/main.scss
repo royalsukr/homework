@@ -6,12 +6,15 @@ body{
     background-color: #252B42;
 background-image: url(../img/background.png);
 
+@include responsive(smartphone-portrait) {
+    background-repeat: no-repeat;
 }
+} 
+
 
 .nav-logo{
     display: flex;
     gap: 100px;
-    color: aliceblue;
     @include responsive(smartphone-portrait) {
     gap: 10px;
     }
@@ -31,6 +34,7 @@ padding-top: 30px;
          background-image: none;
        padding-bottom: 30px;
 }
+
 .nav{
     display: flex;
     align-items: center;
@@ -71,19 +75,50 @@ padding-top: 30px;
     align-items:center;
     text-align: center ;
     gap: 23px;
+    @include responsive(smartphone-portrait) {
+        padding-top: 10px;
+    }
+
         .text{
         font-size: 58px;
         color: aliceblue;
         font-weight: 800;
         font-family: $font;
+        @include responsive(smartphone-portrait) {
+            size: 40px;
+            font-weight: 700;
+            width: 344px;
+            text-align: center;
+        }
+
     }
     .litle-text{
         font-size: 20px;
         color: aliceblue;
         font-weight: 500;
-        font-family: $font; 
+        font-family: $font;
+        @include responsive(smartphone-portrait) {
+            width: 279px;
+            height: 120px;
+        } 
     }
     .button{
-    background-color: ;  
+        background-color:$button-color ; 
+        border-radius: 37px; 
+        padding: 10px 36px;
+        border-style: none;
+        @include responsive(smartphone-portrait) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
     }
+    
+  .learn-more{
+      
+    background-color: #ffffff00;
+    border-radius: 37px; 
+    padding: 10px 36px;
+   border: 1px solid white; 
+}
 }

@@ -2,12 +2,22 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #252B42;
   background-image: url(../img/background.png);
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  body {
+    background-repeat: no-repeat;
+  }
 }
 
 .nav-logo {
   display: flex;
   gap: 100px;
-  color: aliceblue;
   /*
       breakpoints are viewport arbitrary values,
       they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
@@ -96,16 +106,78 @@ body {
   align-items: center;
   text-align: center;
   gap: 23px;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .hero-title {
+    padding-top: 10px;
+  }
 }
 .hero-title .text {
   font-size: 58px;
   color: aliceblue;
   font-weight: 800;
   font-family: font-family "Montserrat", sans-serif;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .hero-title .text {
+    size: 40px;
+    font-weight: 700;
+    width: 344px;
+    text-align: center;
+  }
 }
 .hero-title .litle-text {
   font-size: 20px;
   color: aliceblue;
   font-weight: 500;
   font-family: font-family "Montserrat", sans-serif;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .hero-title .litle-text {
+    width: 279px;
+    height: 120px;
+  }
+}
+.hero-title .button {
+  background-color: #FFA62B;
+  border-radius: 37px;
+  padding: 10px 36px;
+  border-style: none;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .hero-title .button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+.hero-title .learn-more {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 37px;
+  padding: 10px 36px;
+  border: 1px solid white;
 }/*# sourceMappingURL=main.css.map */
