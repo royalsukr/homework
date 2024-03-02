@@ -1,0 +1,89 @@
+@import "until.scss";
+$font:  font-family  "Montserrat", sans-serif;
+$button-color:#FFA62B   ;
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #252B42;
+background-image: url(../img/background.png);
+
+}
+
+.nav-logo{
+    display: flex;
+    gap: 100px;
+    color: aliceblue;
+    @include responsive(smartphone-portrait) {
+    gap: 10px;
+    }
+img{
+    width:30px;
+}
+
+}
+.navigation{
+gap: 50px;
+display: flex;
+justify-content: center;
+padding-top: 30px;
+@include responsive(smartphone-portrait) {
+    padding-top: 10px;
+        background-color: #252B42;
+         background-image: none;
+       padding-bottom: 30px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;  
+      .nav-item a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+ 
+    @include responsive(smartphone-portrait) {
+ display: none;
+ display: flex;
+ flex-direction:column ;
+ margin-top: 70px;
+ font-size: 20px;
+    }
+}
+
+.Nasscorp{
+    height: 30px;
+    margin-right: 500px;
+    
+    @include responsive(smartphone-portrait) {
+        height: 20px;
+        margin-right: 0px;
+    }
+}
+.logo{
+    display: flex;
+}
+}
+
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items:center;
+    text-align: center ;
+    gap: 23px;
+        .text{
+        font-size: 58px;
+        color: aliceblue;
+        font-weight: 800;
+        font-family: $font;
+    }
+    .litle-text{
+        font-size: 20px;
+        color: aliceblue;
+        font-weight: 500;
+        font-family: $font; 
+    }
+    .button{
+    background-color: ;  
+    }
+}

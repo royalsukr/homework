@@ -1,0 +1,111 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #252B42;
+  background-image: url(../img/background.png);
+}
+
+.nav-logo {
+  display: flex;
+  gap: 100px;
+  color: aliceblue;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .nav-logo {
+    gap: 10px;
+  }
+}
+.nav-logo img {
+  width: 30px;
+}
+
+.navigation {
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .navigation {
+    padding-top: 10px;
+    background-color: #252B42;
+    background-image: none;
+    padding-bottom: 30px;
+  }
+}
+.navigation .nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+.navigation .nav .nav-item a {
+  text-decoration: none;
+  color: aliceblue;
+}
+@media only screen and (max-width: 575.98px) {
+  .navigation .nav {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    font-size: 20px;
+  }
+}
+.navigation .Nasscorp {
+  height: 30px;
+  margin-right: 500px;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .navigation .Nasscorp {
+    height: 20px;
+    margin-right: 0px;
+  }
+}
+.navigation .logo {
+  display: flex;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+  text-align: center;
+  gap: 23px;
+}
+.hero-title .text {
+  font-size: 58px;
+  color: aliceblue;
+  font-weight: 800;
+  font-family: font-family "Montserrat", sans-serif;
+}
+.hero-title .litle-text {
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: 500;
+  font-family: font-family "Montserrat", sans-serif;
+}/*# sourceMappingURL=main.css.map */
